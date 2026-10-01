@@ -1,0 +1,72 @@
+name: Movie booking watch
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'test_email: 메일 테스트 / diagnose: 조회 테스트 / check: 감시'
+        type: choice
+        required: true
+        default: check
+        options:
+          - check
+          - test_email
+          - diagnose
+
+permissions:
+  contents: write
+
+concurrency:
+  group: movie-open-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install packages
+        run: python -m pip install -r requirements.txt
+      - name: Install browser
+        if: inputs.mode != 'test_email'
+        run: python -m playwright install --with-deps chromium
+      - name: Check schedules or send test email
+        env:
+          RUN_MODE: ${{ inputs.mode }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: python watch.py --mode "$RUN_MODE"
+      - name: Save successful deliveries and last check
+        if: always() && inputs.mode != 'test_email'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for file in state.json last-check.json; do
+            if test -f "$file"; then git add "$file"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save movie watch state'
+            git push origin HEAD:main
+          fi
+      - name: Show last check in job summary
+        if: always() && inputs.mode != 'test_email'
+        run: |
+          if test -f last-check.json; then
+            python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r = json.loads(Path('last-check.json').read_text())
+          lines = ['Last check: ' + r['checked_at_kst'], '', '| Theater | Result |', '| --- | --- |']
+          for x in r['results'].values():
+              status = 'ERROR — see log' if 'error' in x else str(len(x['sessions'])) + ' matching sessions'
+              lines.append('| ' + x['name'] + ' | ' + status + ' |')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write('\n'.join(lines) + '\n')
+          PY
