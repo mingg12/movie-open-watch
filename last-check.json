@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-02T04:40:57.624753+09:00",
+  "checked_at_kst": "2026-10-02T04:51:06.277007+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -26,10 +26,6 @@
       "sessions": [],
       "name": "CGV 다산"
     },
-    "cgv:0046": {
-      "sessions": [],
-      "name": "CGV 상봉"
-    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
@@ -37,9 +33,14 @@
     "cgv:0013": {
       "sessions": [],
       "name": "CGV 용산아이파크몰"
+    },
+    "cgv:0046": {
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "name": "CGV 상봉"
     }
   },
   "errors": [
+    "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "메가박스 남양주현대아울렛스페이스원: <urlopen error timed out>",
     "메가박스 상봉: <urlopen error timed out>"
   ]
