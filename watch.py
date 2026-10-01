@@ -348,8 +348,13 @@ def main():
     datetime.strptime(config['date'], '%Y%m%d')
     if args.mode == 'test_email':
         settings = mail_settings()
+        preview = ['이 메일은 표시 형식 테스트입니다. 실제 조회 결과나 예매 오픈 알림이 아닙니다.',
+                   '아래 모든 지점의 0개 표시는 예시입니다.', '',
+                   '상영일: 2026.10.10', '']
+        for t in config['targets']:
+            preview.extend(['- ' + t['name'], '조회 성공 / 예매 가능 회차: 0개', ''])
         for recipient in settings[2]:
-            send_mail(settings, recipient, '[영화 알림] 테스트 메일', '이 메일은 발송 설정 테스트입니다. 예매 오픈 알림이 아닙니다.\n대상: 2026.10.10 / 극장판 치이카와 / 지정한 9개 지점')
+            send_mail(settings, recipient, '[영화 알림] 테스트 메일', '\n'.join(preview))
         print('Test email accepted by Gmail SMTP. Check inbox/spam folder.')
         return 0
     now = datetime.now(KST)
@@ -415,7 +420,9 @@ def main():
             summary = ['자동 실행 확인: ' + now.isoformat(), '상영일: 2026.10.10', '']
             for t in targets:
                 r = results[t['chain'] + ':' + t['code']]
-                summary.append(t['name'] + ': ' + ('조회 오류 (미오픈 여부를 판단할 수 없음)' if 'error' in r else f"조회 성공 / 예매 가능한 치이카와 회차 {len(r['sessions'])}개"))
+                summary.extend(['- ' + t['name'],
+                                '조회 오류 (미오픈 여부를 판단할 수 없음)' if 'error' in r else f"조회 성공 / 예매 가능 회차: {len(r['sessions'])}개",
+                                ''])
             summary += ['', '조회 오류가 있으면 GitHub Actions 로그를 확인해주세요.']
             if os.environ.get('GITHUB_REPOSITORY'):
                 summary.append('https://github.com/' + os.environ['GITHUB_REPOSITORY'] + '/actions')
