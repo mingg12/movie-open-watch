@@ -185,7 +185,7 @@ def fetch_other(target, config):
     raise ValueError('Unsupported cinema chain')
 
 
-def fetch_cgv(targets, config):
+def fetch_cgv_browser(targets, config):
     result = {}
     try:
         from playwright.sync_api import sync_playwright
@@ -216,6 +216,59 @@ def fetch_cgv(targets, config):
             result[t['code']] = {'error': str(exc)[:350]}
     return result
 
+
+
+def fetch_cgv_direct(target, config):
+    """Read CGV's separate schedule API using its public web-client protocol.
+
+    Protocol reference: wodn5515/cgv-megabox-movie-alarm/src/cgv_client.py.
+    This static signing value belongs to the public client protocol; it is not
+    the user's CGV login credential. API changes or access denial remain errors.
+    """
+    import base64
+    import hmac
+    import time
+    path = '/cnm/atkt/searchMovScnInfo'
+    stamp = str(int(time.time()))
+    public_client_key = 'ydqXY0ocnFLmJGHr_zNzFcpjwAsXq_8JcBNURAkRscg'
+    signature = base64.b64encode(hmac.new(
+        public_client_key.encode(), f'{stamp}|{path}|'.encode(), hashlib.sha256
+    ).digest()).decode()
+    query = urllib.parse.urlencode({'coCd': 'A420', 'siteNo': target['code'],
+                                   'scnYmd': config['date'], 'rtctlScopCd': '08'})
+    headers = {'Accept': 'application/json', 'Accept-Language': 'ko-KR',
+               'Origin': 'https://cgv.co.kr', 'Referer': 'https://cgv.co.kr/',
+               'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+               'X-TIMESTAMP': stamp, 'X-SIGNATURE': signature}
+    request = urllib.request.Request('https://api.cgv.co.kr' + path + '?' + query, headers=headers)
+    with urllib.request.urlopen(request, timeout=20) as response:
+        body = json.load(response)
+    rows = required_list(body.get('data'), 'CGV direct data')
+    # This endpoint returns every movie at the theater. A film ID is mandatory:
+    # never interpret an unidentified row as the requested movie.
+    if any(not row.get('movNo') for row in rows):
+        raise ValueError('CGV direct response is missing movie IDs')
+    return parse_cgv(body, target, config)
+
+
+def fetch_cgv(targets, config):
+    result, failures = {}, {}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        jobs = {pool.submit(fetch_cgv_direct, target, config): target for target in targets}
+        for future in concurrent.futures.as_completed(jobs):
+            target = jobs[future]
+            try:
+                result[target['code']] = {'sessions': future.result()}
+            except Exception as exc:
+                failures[target['code']] = type(exc).__name__ + ': ' + str(exc)[:200]
+    if failures:
+        pending = [target for target in targets if target['code'] in failures]
+        fallback = fetch_cgv_browser(pending, config)
+        for code, item in fallback.items():
+            if 'error' in item:
+                item['error'] = 'Direct API: ' + failures[code] + '; browser: ' + item['error'][:250]
+        result.update(fallback)
+    return result
 
 def atomic_json(path, value):
     temp = path.with_suffix('.tmp')
