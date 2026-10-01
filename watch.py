@@ -1,5 +1,6 @@
 """One read-only schedule check. State records successful mail delivery per recipient."""
 import argparse
+import contextlib
 import concurrent.futures
 import hashlib
 import html
@@ -10,6 +11,9 @@ import re
 import smtplib
 import ssl
 import sys
+import threading
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime
@@ -21,6 +25,7 @@ ROOT = Path(__file__).resolve().parent
 STATE = ROOT / 'state.json'
 REPORT = ROOT / 'last-check.json'
 KST = ZoneInfo('Asia/Seoul')
+MEGABOX_GATE = threading.Lock()
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36'
 
 
@@ -32,8 +37,27 @@ def http(url, payload=None, form=False, referer=None):
         headers['Content-Type'] = 'application/x-www-form-urlencoded' if form else 'application/json'
     if referer:
         headers['Referer'] = referer
-    with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=headers), timeout=20) as response:
-        return response.read().decode('utf-8-sig')
+    request = urllib.request.Request(url, data=data, headers=headers)
+    host = urllib.parse.urlsplit(url).hostname or ''
+    gate = MEGABOX_GATE if host == 'www.megabox.co.kr' else contextlib.nullcontext()
+    # Only read-only timetable requests use this helper. Email delivery is never
+    # retried here. Serialize Megabox requests to avoid overlapping branch calls.
+    with gate:
+        for attempt in range(1, 4):
+            try:
+                with urllib.request.urlopen(request, timeout=30) as response:
+                    return response.read().decode('utf-8-sig')
+            except urllib.error.HTTPError as exc:
+                if exc.code not in (408, 429, 500, 502, 503, 504) or attempt == 3:
+                    raise
+                reason = 'HTTP ' + str(exc.code)
+            except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+                if attempt == 3:
+                    raise
+                reason = type(exc).__name__ + ': ' + str(exc)
+            delay = 2 ** attempt
+            print(f'RETRY {host}: {reason}; retry {attempt + 1}/3 in {delay}s', flush=True)
+            time.sleep(delay)
 
 
 def required_list(value, name):
