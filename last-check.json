@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-01T21:51:22.330156+09:00",
+  "checked_at_kst": "2026-10-01T21:59:13.737265+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -23,26 +23,21 @@
       "name": "롯데시네마 용산"
     },
     "cgv:0232": {
-      "error": "Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "sessions": [],
       "name": "CGV 구리"
     },
     "cgv:0351": {
-      "error": "Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "sessions": [],
       "name": "CGV 다산"
     },
-    "cgv:0046": {
-      "error": "Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-      "name": "CGV 상봉"
-    },
     "cgv:0013": {
-      "error": "Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "sessions": [],
       "name": "CGV 용산아이파크몰"
+    },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
     }
   },
-  "errors": [
-    "CGV 구리: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 다산: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 상봉: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 용산아이파크몰: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
-  ]
+  "errors": []
 }
