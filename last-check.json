@@ -1,9 +1,9 @@
 {
-  "checked_at_kst": "2026-10-02T11:00:55.591601+09:00",
+  "checked_at_kst": "2026-10-02T11:10:40.390533+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
-      "error": "Expecting value: line 2 column 9 (char 9)",
+      "sessions": [],
       "name": "롯데시네마 구리아울렛"
     },
     "megabox:0019": {
@@ -22,10 +22,6 @@
       "sessions": [],
       "name": "메가박스 상봉"
     },
-    "cgv:0351": {
-      "sessions": [],
-      "name": "CGV 다산"
-    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
@@ -34,12 +30,14 @@
       "sessions": [],
       "name": "CGV 상봉"
     },
+    "cgv:0351": {
+      "sessions": [],
+      "name": "CGV 다산"
+    },
     "cgv:0013": {
       "sessions": [],
       "name": "CGV 용산아이파크몰"
     }
   },
-  "errors": [
-    "롯데시네마 구리아울렛: Expecting value: line 2 column 9 (char 9)"
-  ]
+  "errors": []
 }
