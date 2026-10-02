@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-02T14:40:40.423310+09:00",
+  "checked_at_kst": "2026-10-02T14:50:35.380708+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -26,18 +26,21 @@
       "sessions": [],
       "name": "CGV 구리"
     },
-    "cgv:0351": {
-      "sessions": [],
-      "name": "CGV 다산"
-    },
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
     },
+    "cgv:0351": {
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "name": "CGV 다산"
+    },
     "cgv:0013": {
-      "sessions": [],
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 용산아이파크몰"
     }
   },
-  "errors": []
+  "errors": [
+    "CGV 다산: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
+  ]
 }
