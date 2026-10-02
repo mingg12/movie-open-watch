@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-03T03:30:48.630671+09:00",
+  "checked_at_kst": "2026-10-03T03:40:39.469455+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -10,21 +10,17 @@
       "sessions": [],
       "name": "메가박스 남양주현대아울렛스페이스원"
     },
-    "cineq:2002": {
-      "sessions": [],
-      "name": "씨네큐 남양주다산"
-    },
     "lotte:1014": {
       "sessions": [],
       "name": "롯데시네마 용산"
     },
+    "cineq:2002": {
+      "sessions": [],
+      "name": "씨네큐 남양주다산"
+    },
     "megabox:1311": {
       "sessions": [],
       "name": "메가박스 상봉"
-    },
-    "cgv:0232": {
-      "sessions": [],
-      "name": "CGV 구리"
     },
     "cgv:0351": {
       "sessions": [],
@@ -33,6 +29,10 @@
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
+    },
+    "cgv:0232": {
+      "sessions": [],
+      "name": "CGV 구리"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
