@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-03T01:30:53.229144+09:00",
+  "checked_at_kst": "2026-10-03T01:40:38.183129+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -22,6 +22,10 @@
       "sessions": [],
       "name": "메가박스 상봉"
     },
+    "cgv:0351": {
+      "sessions": [],
+      "name": "CGV 다산"
+    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
@@ -29,10 +33,6 @@
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
-    },
-    "cgv:0351": {
-      "sessions": [],
-      "name": "CGV 다산"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
