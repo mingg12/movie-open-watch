@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-02T14:00:57.279797+09:00",
+  "checked_at_kst": "2026-10-02T14:10:38.328173+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -26,13 +26,13 @@
       "sessions": [],
       "name": "CGV 다산"
     },
-    "cgv:0046": {
-      "sessions": [],
-      "name": "CGV 상봉"
-    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
+    },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
     },
     "cgv:0013": {
       "sessions": [],
