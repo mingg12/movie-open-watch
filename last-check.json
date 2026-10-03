@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-03T15:10:44.542756+09:00",
+  "checked_at_kst": "2026-10-03T15:20:37.675019+09:00",
   "date": "20261010",
   "results": {
     "lotte:3026": {
@@ -26,13 +26,80 @@
       "sessions": [],
       "name": "CGV 구리"
     },
-    "cgv:0351": {
-      "sessions": [],
-      "name": "CGV 다산"
-    },
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
+    },
+    "cgv:0351": {
+      "sessions": [
+        {
+          "id": "006:09:55",
+          "time": "09:55",
+          "screen": "6관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "006:12:00",
+          "time": "12:00",
+          "screen": "6관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "006:14:05",
+          "time": "14:05",
+          "screen": "6관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "006:16:10",
+          "time": "16:10",
+          "screen": "6관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "006:18:15",
+          "time": "18:15",
+          "screen": "6관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "009:08:55",
+          "time": "08:55",
+          "screen": "9관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "009:11:00",
+          "time": "11:00",
+          "screen": "9관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "009:13:05",
+          "time": "13:05",
+          "screen": "9관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "009:15:10",
+          "time": "15:10",
+          "screen": "9관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "009:17:15",
+          "time": "17:15",
+          "screen": "9관 (리클라이너)",
+          "seats": 51
+        },
+        {
+          "id": "009:19:20",
+          "time": "19:20",
+          "screen": "9관 (리클라이너)",
+          "seats": 51
+        }
+      ],
+      "name": "CGV 다산"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
