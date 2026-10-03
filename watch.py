@@ -350,7 +350,7 @@ def main():
         settings = mail_settings()
         preview = ['이 메일은 표시 형식 테스트입니다. 실제 조회 결과나 예매 오픈 알림이 아닙니다.',
                    '아래 모든 지점의 0개 표시는 예시입니다.', '',
-                   '상영일: 2026.10.10', '']
+                   '상영일: 2026.10.14', '']
         for t in config['targets']:
             preview.extend(['- ' + t['name'], '조회 성공 / 예매 가능 회차: 0개', ''])
         for recipient in settings[2]:
@@ -396,13 +396,13 @@ def main():
                 fresh = unsent_sessions(state, recipient, identity, result['sessions'])
                 if not fresh:
                     continue
-                lines = [config['movie_name'], '상영일: 2026.10.10(토)', t['name'], '', '예매 가능한 새 회차를 확인했습니다.']
+                lines = [config['movie_name'], '상영일: 2026.10.14(수)', t['name'], '', '예매 가능한 새 회차를 확인했습니다.']
                 for s in fresh:
                     seats = f" / 잔여 {s['seats']}석" if s['seats'] is not None else ''
                     lines.append(f"{s['time']} / {s['screen']}{seats}")
                 lines += ['', t['url'], '', '확인 시점: ' + now.isoformat(), '회차와 좌석은 변경될 수 있습니다. 예매 화면에서 확인해주세요.']
                 try:
-                    send_mail(settings, recipient, f"[치이카와 10/10] {t['name']} 새 회차 확인", '\n'.join(lines))
+                    send_mail(settings, recipient, f"[치이카와 10/14] {t['name']} 새 회차 확인", '\n'.join(lines))
                     mark_sent(state, recipient, identity, fresh)
                     atomic_json(STATE, state)
                 except Exception as exc:
@@ -417,7 +417,7 @@ def main():
             rk = recipient_key(recipient)
             if health_key in state.setdefault('health', {}).get(rk, []):
                 continue
-            summary = ['자동 실행 확인: ' + now.isoformat(), '상영일: 2026.10.10', '']
+            summary = ['자동 실행 확인: ' + now.isoformat(), '상영일: 2026.10.14', '']
             for t in targets:
                 r = results[t['chain'] + ':' + t['code']]
                 summary.extend(['- ' + t['name'],
