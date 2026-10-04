@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-04T22:40:40.150374+09:00",
+  "checked_at_kst": "2026-10-04T22:50:38.475384+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -26,10 +26,6 @@
       "sessions": [],
       "name": "CGV 다산"
     },
-    "cgv:0046": {
-      "sessions": [],
-      "name": "CGV 상봉"
-    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
@@ -37,6 +33,10 @@
     "cgv:0013": {
       "sessions": [],
       "name": "CGV 용산아이파크몰"
+    },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
     }
   },
   "errors": []
