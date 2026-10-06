@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-07T01:30:59.770412+09:00",
+  "checked_at_kst": "2026-10-07T01:42:12.700685+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -10,10 +10,6 @@
       "sessions": [],
       "name": "메가박스 남양주현대아울렛스페이스원"
     },
-    "cineq:2002": {
-      "sessions": [],
-      "name": "씨네큐 남양주다산"
-    },
     "lotte:1014": {
       "sessions": [],
       "name": "롯데시네마 용산"
@@ -21,6 +17,10 @@
     "megabox:1311": {
       "sessions": [],
       "name": "메가박스 상봉"
+    },
+    "cineq:2002": {
+      "error": "<urlopen error timed out>",
+      "name": "씨네큐 남양주다산"
     },
     "cgv:0351": {
       "sessions": [],
@@ -39,5 +39,7 @@
       "name": "CGV 용산아이파크몰"
     }
   },
-  "errors": []
+  "errors": [
+    "씨네큐 남양주다산: <urlopen error timed out>"
+  ]
 }
