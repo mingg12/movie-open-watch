@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-06T22:50:41.503006+09:00",
+  "checked_at_kst": "2026-10-06T23:00:58.207504+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -22,10 +22,6 @@
       "sessions": [],
       "name": "메가박스 상봉"
     },
-    "cgv:0232": {
-      "sessions": [],
-      "name": "CGV 구리"
-    },
     "cgv:0351": {
       "sessions": [],
       "name": "CGV 다산"
@@ -33,6 +29,10 @@
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
+    },
+    "cgv:0232": {
+      "sessions": [],
+      "name": "CGV 구리"
     },
     "cgv:0013": {
       "sessions": [],
