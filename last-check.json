@@ -1,18 +1,18 @@
 {
-  "checked_at_kst": "2026-10-07T03:10:44.039693+09:00",
+  "checked_at_kst": "2026-10-07T03:20:54.075191+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
       "sessions": [],
       "name": "롯데시네마 구리아울렛"
     },
-    "lotte:1014": {
-      "sessions": [],
-      "name": "롯데시네마 용산"
-    },
     "megabox:0019": {
       "sessions": [],
       "name": "메가박스 남양주현대아울렛스페이스원"
+    },
+    "lotte:1014": {
+      "sessions": [],
+      "name": "롯데시네마 용산"
     },
     "cineq:2002": {
       "sessions": [],
@@ -22,21 +22,21 @@
       "sessions": [],
       "name": "메가박스 상봉"
     },
-    "cgv:0351": {
-      "sessions": [],
-      "name": "CGV 다산"
-    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
     },
-    "cgv:0046": {
+    "cgv:0351": {
       "sessions": [],
-      "name": "CGV 상봉"
+      "name": "CGV 다산"
     },
     "cgv:0013": {
       "sessions": [],
       "name": "CGV 용산아이파크몰"
+    },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
     }
   },
   "errors": []
