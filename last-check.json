@@ -1,7 +1,11 @@
 {
-  "checked_at_kst": "2026-10-06T09:10:40.226972+09:00",
+  "checked_at_kst": "2026-10-06T09:20:53.562751+09:00",
   "date": "20261014",
   "results": {
+    "lotte:3026": {
+      "sessions": [],
+      "name": "롯데시네마 구리아울렛"
+    },
     "megabox:0019": {
       "sessions": [],
       "name": "메가박스 남양주현대아울렛스페이스원"
@@ -15,31 +19,27 @@
       "name": "메가박스 상봉"
     },
     "cineq:2002": {
-      "sessions": [],
+      "error": "<urlopen error timed out>",
       "name": "씨네큐 남양주다산"
-    },
-    "lotte:3026": {
-      "error": "Expecting value: line 2 column 9 (char 9)",
-      "name": "롯데시네마 구리아울렛"
-    },
-    "cgv:0232": {
-      "sessions": [],
-      "name": "CGV 구리"
     },
     "cgv:0351": {
       "sessions": [],
       "name": "CGV 다산"
     },
-    "cgv:0013": {
+    "cgv:0232": {
       "sessions": [],
-      "name": "CGV 용산아이파크몰"
+      "name": "CGV 구리"
     },
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
+    },
+    "cgv:0013": {
+      "sessions": [],
+      "name": "CGV 용산아이파크몰"
     }
   },
   "errors": [
-    "롯데시네마 구리아울렛: Expecting value: line 2 column 9 (char 9)"
+    "씨네큐 남양주다산: <urlopen error timed out>"
   ]
 }
