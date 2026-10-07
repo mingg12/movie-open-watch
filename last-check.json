@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-07T17:20:42.812385+09:00",
+  "checked_at_kst": "2026-10-07T17:30:46.942824+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -22,9 +22,9 @@
       "sessions": [],
       "name": "메가박스 상봉"
     },
-    "cgv:0046": {
+    "cgv:0232": {
       "sessions": [],
-      "name": "CGV 상봉"
+      "name": "CGV 구리"
     },
     "cgv:0351": {
       "sessions": [
@@ -32,7 +32,7 @@
           "id": "006:10:00",
           "time": "10:00",
           "screen": "6관 (리클라이너)",
-          "seats": 37
+          "seats": 36
         },
         {
           "id": "006:12:05",
@@ -73,16 +73,14 @@
       ],
       "name": "CGV 다산"
     },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
+    },
     "cgv:0013": {
       "sessions": [],
       "name": "CGV 용산아이파크몰"
-    },
-    "cgv:0232": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-      "name": "CGV 구리"
     }
   },
-  "errors": [
-    "CGV 구리: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
-  ]
+  "errors": []
 }
