@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-08T17:30:46.168847+09:00",
+  "checked_at_kst": "2026-10-08T17:40:37.431379+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -22,13 +22,13 @@
       "error": "<urlopen error timed out>",
       "name": "메가박스 상봉"
     },
-    "cgv:0046": {
-      "sessions": [],
-      "name": "CGV 상봉"
-    },
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
+    },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
     },
     "cgv:0013": {
       "sessions": [],
