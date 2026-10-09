@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-10T03:05:34.759187+09:00",
+  "checked_at_kst": "2026-10-10T03:10:41.647151+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -83,41 +83,6 @@
         }
       ],
       "name": "메가박스 상봉"
-    },
-    "cgv:0232": {
-      "sessions": [
-        {
-          "id": "002:11:00",
-          "time": "11:00",
-          "screen": "2관",
-          "seats": 171
-        },
-        {
-          "id": "002:13:10",
-          "time": "13:10",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "002:15:40",
-          "time": "15:40",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "005:17:25",
-          "time": "17:25",
-          "screen": "5관",
-          "seats": 142
-        },
-        {
-          "id": "005:20:05",
-          "time": "20:05",
-          "screen": "5관",
-          "seats": 142
-        }
-      ],
-      "name": "CGV 구리"
     },
     "cgv:0351": {
       "sessions": [
@@ -236,6 +201,41 @@
         }
       ],
       "name": "CGV 상봉"
+    },
+    "cgv:0232": {
+      "sessions": [
+        {
+          "id": "002:11:00",
+          "time": "11:00",
+          "screen": "2관",
+          "seats": 171
+        },
+        {
+          "id": "002:13:10",
+          "time": "13:10",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:15:40",
+          "time": "15:40",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "005:17:25",
+          "time": "17:25",
+          "screen": "5관",
+          "seats": 142
+        },
+        {
+          "id": "005:20:05",
+          "time": "20:05",
+          "screen": "5관",
+          "seats": 142
+        }
+      ],
+      "name": "CGV 구리"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
