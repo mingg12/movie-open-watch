@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-09T19:20:38.084072+09:00",
+  "checked_at_kst": "2026-10-09T19:30:44.998894+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -26,7 +26,7 @@
           "id": "1101421",
           "time": "12:40",
           "screen": "(리클라이너)6 관",
-          "seats": 62
+          "seats": 64
         },
         {
           "id": "1101422",
@@ -58,41 +58,6 @@
     "megabox:1311": {
       "sessions": [],
       "name": "메가박스 상봉"
-    },
-    "cgv:0232": {
-      "sessions": [
-        {
-          "id": "002:11:00",
-          "time": "11:00",
-          "screen": "2관",
-          "seats": 171
-        },
-        {
-          "id": "002:13:10",
-          "time": "13:10",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "002:15:40",
-          "time": "15:40",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "005:17:25",
-          "time": "17:25",
-          "screen": "5관",
-          "seats": 144
-        },
-        {
-          "id": "005:20:05",
-          "time": "20:05",
-          "screen": "5관",
-          "seats": 144
-        }
-      ],
-      "name": "CGV 구리"
     },
     "cgv:0351": {
       "sessions": [
@@ -183,14 +148,51 @@
       ],
       "name": "CGV 다산"
     },
+    "cgv:0232": {
+      "sessions": [
+        {
+          "id": "002:11:00",
+          "time": "11:00",
+          "screen": "2관",
+          "seats": 171
+        },
+        {
+          "id": "002:13:10",
+          "time": "13:10",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:15:40",
+          "time": "15:40",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "005:17:25",
+          "time": "17:25",
+          "screen": "5관",
+          "seats": 144
+        },
+        {
+          "id": "005:20:05",
+          "time": "20:05",
+          "screen": "5관",
+          "seats": 144
+        }
+      ],
+      "name": "CGV 구리"
+    },
     "cgv:0046": {
       "sessions": [],
       "name": "CGV 상봉"
     },
     "cgv:0013": {
-      "sessions": [],
+      "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 용산아이파크몰"
     }
   },
-  "errors": []
+  "errors": [
+    "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
+  ]
 }
