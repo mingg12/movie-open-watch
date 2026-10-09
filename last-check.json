@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-09T19:40:34.699388+09:00",
+  "checked_at_kst": "2026-10-09T19:50:37.174588+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -188,11 +188,11 @@
       "name": "CGV 상봉"
     },
     "cgv:0013": {
-      "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 용산아이파크몰"
     }
   },
   "errors": [
-    "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
