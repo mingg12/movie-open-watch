@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-09T15:33:20.351850+09:00",
+  "checked_at_kst": "2026-10-09T15:40:43.985658+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -25,6 +25,14 @@
     "cgv:0232": {
       "sessions": [],
       "name": "CGV 구리"
+    },
+    "cgv:0046": {
+      "sessions": [],
+      "name": "CGV 상봉"
+    },
+    "cgv:0013": {
+      "sessions": [],
+      "name": "CGV 용산아이파크몰"
     },
     "cgv:0351": {
       "sessions": [
@@ -74,7 +82,7 @@
           "id": "009:08:55",
           "time": "08:55",
           "screen": "9관 (리클라이너)",
-          "seats": 51
+          "seats": 35
         },
         {
           "id": "009:11:00",
@@ -104,7 +112,7 @@
           "id": "009:19:30",
           "time": "19:30",
           "screen": "9관 (리클라이너)",
-          "seats": 51
+          "seats": 50
         },
         {
           "id": "009:21:35",
@@ -114,17 +122,7 @@
         }
       ],
       "name": "CGV 다산"
-    },
-    "cgv:0046": {
-      "sessions": [],
-      "name": "CGV 상봉"
-    },
-    "cgv:0013": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-      "name": "CGV 용산아이파크몰"
     }
   },
-  "errors": [
-    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
-  ]
+  "errors": []
 }
