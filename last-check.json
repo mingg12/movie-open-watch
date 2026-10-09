@@ -1,10 +1,14 @@
 {
-  "checked_at_kst": "2026-10-10T07:20:46.248792+09:00",
+  "checked_at_kst": "2026-10-10T07:30:56.414440+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
       "sessions": [],
       "name": "롯데시네마 구리아울렛"
+    },
+    "megabox:0019": {
+      "sessions": [],
+      "name": "메가박스 남양주현대아울렛스페이스원"
     },
     "lotte:1014": {
       "sessions": [],
@@ -51,12 +55,33 @@
       ],
       "name": "씨네큐 남양주다산"
     },
-    "megabox:0019": {
-      "error": "<urlopen error timed out>",
-      "name": "메가박스 남양주현대아울렛스페이스원"
-    },
     "megabox:1311": {
-      "error": "<urlopen error timed out>",
+      "sessions": [
+        {
+          "id": "2610141311007",
+          "time": "13:50",
+          "screen": "컴포트2관(6층)[Laser]",
+          "seats": 112
+        },
+        {
+          "id": "2610141311008",
+          "time": "15:55",
+          "screen": "컴포트2관(6층)[Laser]",
+          "seats": 121
+        },
+        {
+          "id": "2610141311009",
+          "time": "18:00",
+          "screen": "컴포트2관(6층)[Laser]",
+          "seats": 121
+        },
+        {
+          "id": "2610141311010",
+          "time": "20:55",
+          "screen": "1관(4층)[Laser]",
+          "seats": 155
+        }
+      ],
       "name": "메가박스 상봉"
     },
     "cgv:0232": {
@@ -218,8 +243,6 @@
     }
   },
   "errors": [
-    "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "메가박스 남양주현대아울렛스페이스원: <urlopen error timed out>",
-    "메가박스 상봉: <urlopen error timed out>"
+    "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
