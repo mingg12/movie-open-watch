@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-10T22:00:56.661210+09:00",
+  "checked_at_kst": "2026-10-10T22:10:38.760108+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -201,6 +201,47 @@
       ],
       "name": "메가박스 상봉"
     },
+    "cgv:0232": {
+      "sessions": [
+        {
+          "id": "002:11:00",
+          "time": "11:00",
+          "screen": "2관",
+          "seats": 170
+        },
+        {
+          "id": "002:13:10",
+          "time": "13:10",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:15:40",
+          "time": "15:40",
+          "screen": "2관",
+          "seats": 184
+        },
+        {
+          "id": "002:21:00",
+          "time": "21:00",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "005:17:25",
+          "time": "17:25",
+          "screen": "5관",
+          "seats": 140
+        },
+        {
+          "id": "005:20:05",
+          "time": "20:05",
+          "screen": "5관",
+          "seats": 138
+        }
+      ],
+      "name": "CGV 구리"
+    },
     "cgv:0351": {
       "sessions": [
         {
@@ -249,7 +290,7 @@
           "id": "009:08:55",
           "time": "08:55",
           "screen": "9관 (리클라이너)",
-          "seats": 39
+          "seats": 35
         },
         {
           "id": "009:11:00",
@@ -314,14 +355,10 @@
           "id": "001:19:20",
           "time": "19:20",
           "screen": "1관",
-          "seats": 321
+          "seats": 319
         }
       ],
       "name": "CGV 상봉"
-    },
-    "cgv:0232": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-      "name": "CGV 구리"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
@@ -329,7 +366,6 @@
     }
   },
   "errors": [
-    "CGV 구리: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
