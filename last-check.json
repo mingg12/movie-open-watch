@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-10T17:40:38.326129+09:00",
+  "checked_at_kst": "2026-10-10T17:51:37.274729+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -12,7 +12,7 @@
           "id": "2610140019057",
           "time": "10:50",
           "screen": "2관 [Laser]",
-          "seats": 131
+          "seats": 129
         },
         {
           "id": "2610140019046",
@@ -115,6 +115,47 @@
       ],
       "name": "메가박스 상봉"
     },
+    "cgv:0232": {
+      "sessions": [
+        {
+          "id": "002:11:00",
+          "time": "11:00",
+          "screen": "2관",
+          "seats": 170
+        },
+        {
+          "id": "002:13:10",
+          "time": "13:10",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:15:40",
+          "time": "15:40",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:21:00",
+          "time": "21:00",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "005:17:25",
+          "time": "17:25",
+          "screen": "5관",
+          "seats": 140
+        },
+        {
+          "id": "005:20:05",
+          "time": "20:05",
+          "screen": "5관",
+          "seats": 137
+        }
+      ],
+      "name": "CGV 구리"
+    },
     "cgv:0351": {
       "sessions": [
         {
@@ -204,49 +245,33 @@
       ],
       "name": "CGV 다산"
     },
-    "cgv:0232": {
+    "cgv:0046": {
       "sessions": [
         {
-          "id": "002:11:00",
-          "time": "11:00",
-          "screen": "2관",
-          "seats": 170
+          "id": "001:10:40",
+          "time": "10:40",
+          "screen": "1관",
+          "seats": 230
         },
         {
-          "id": "002:13:10",
-          "time": "13:10",
-          "screen": "2관",
-          "seats": 185
+          "id": "001:12:50",
+          "time": "12:50",
+          "screen": "1관",
+          "seats": 317
         },
         {
-          "id": "002:15:40",
-          "time": "15:40",
-          "screen": "2관",
-          "seats": 185
+          "id": "001:17:10",
+          "time": "17:10",
+          "screen": "1관",
+          "seats": 318
         },
         {
-          "id": "002:21:00",
-          "time": "21:00",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "005:17:25",
-          "time": "17:25",
-          "screen": "5관",
-          "seats": 140
-        },
-        {
-          "id": "005:20:05",
-          "time": "20:05",
-          "screen": "5관",
-          "seats": 137
+          "id": "001:19:20",
+          "time": "19:20",
+          "screen": "1관",
+          "seats": 321
         }
       ],
-      "name": "CGV 구리"
-    },
-    "cgv:0046": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 상봉"
     },
     "cgv:0013": {
@@ -255,7 +280,6 @@
     }
   },
   "errors": [
-    "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
