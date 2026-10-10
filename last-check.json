@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-10T22:40:35.605695+09:00",
+  "checked_at_kst": "2026-10-10T22:50:39.788979+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -24,6 +24,82 @@
         }
       ],
       "name": "롯데시네마 구리아울렛"
+    },
+    "megabox:0019": {
+      "sessions": [
+        {
+          "id": "2610140019057",
+          "time": "10:50",
+          "screen": "2관 [Laser]",
+          "seats": 123
+        },
+        {
+          "id": "2610140019046",
+          "time": "13:00",
+          "screen": "2관 [Laser]",
+          "seats": 163
+        },
+        {
+          "id": "2610140019045",
+          "time": "15:10",
+          "screen": "2관 [Laser]",
+          "seats": 163
+        },
+        {
+          "id": "2610140019047",
+          "time": "17:00",
+          "screen": "6관 [Laser]",
+          "seats": 120
+        },
+        {
+          "id": "2610140019034",
+          "time": "19:40",
+          "screen": "2관 [Laser]",
+          "seats": 163
+        }
+      ],
+      "name": "메가박스 남양주현대아울렛스페이스원"
+    },
+    "cineq:2002": {
+      "sessions": [
+        {
+          "id": "1101356",
+          "time": "17:55",
+          "screen": "(리클라이너)2 관",
+          "seats": 46
+        },
+        {
+          "id": "1101421",
+          "time": "12:40",
+          "screen": "(리클라이너)6 관",
+          "seats": 46
+        },
+        {
+          "id": "1101422",
+          "time": "14:45",
+          "screen": "(리클라이너)6 관",
+          "seats": 52
+        },
+        {
+          "id": "1101423",
+          "time": "16:50",
+          "screen": "(리클라이너)6 관",
+          "seats": 54
+        },
+        {
+          "id": "1101424",
+          "time": "18:55",
+          "screen": "(리클라이너)6 관",
+          "seats": 56
+        },
+        {
+          "id": "1101425",
+          "time": "21:00",
+          "screen": "(리클라이너)6 관",
+          "seats": 53
+        }
+      ],
+      "name": "씨네큐 남양주다산"
     },
     "lotte:1014": {
       "sessions": [
@@ -96,53 +172,33 @@
       ],
       "name": "롯데시네마 용산"
     },
-    "cineq:2002": {
+    "megabox:1311": {
       "sessions": [
         {
-          "id": "1101356",
-          "time": "17:55",
-          "screen": "(리클라이너)2 관",
-          "seats": 46
+          "id": "2610141311007",
+          "time": "13:50",
+          "screen": "컴포트2관(6층)[Laser]",
+          "seats": 93
         },
         {
-          "id": "1101421",
-          "time": "12:40",
-          "screen": "(리클라이너)6 관",
-          "seats": 46
+          "id": "2610141311008",
+          "time": "15:55",
+          "screen": "컴포트2관(6층)[Laser]",
+          "seats": 121
         },
         {
-          "id": "1101422",
-          "time": "14:45",
-          "screen": "(리클라이너)6 관",
-          "seats": 52
+          "id": "2610141311009",
+          "time": "18:00",
+          "screen": "컴포트2관(6층)[Laser]",
+          "seats": 121
         },
         {
-          "id": "1101423",
-          "time": "16:50",
-          "screen": "(리클라이너)6 관",
-          "seats": 54
-        },
-        {
-          "id": "1101424",
-          "time": "18:55",
-          "screen": "(리클라이너)6 관",
-          "seats": 56
-        },
-        {
-          "id": "1101425",
-          "time": "21:00",
-          "screen": "(리클라이너)6 관",
-          "seats": 53
+          "id": "2610141311010",
+          "time": "20:55",
+          "screen": "1관(4층)[Laser]",
+          "seats": 155
         }
       ],
-      "name": "씨네큐 남양주다산"
-    },
-    "megabox:0019": {
-      "error": "<urlopen error timed out>",
-      "name": "메가박스 남양주현대아울렛스페이스원"
-    },
-    "megabox:1311": {
-      "error": "<urlopen error timed out>",
       "name": "메가박스 상봉"
     },
     "cgv:0232": {
@@ -293,7 +349,7 @@
           "id": "001:17:10",
           "time": "17:10",
           "screen": "1관",
-          "seats": 316
+          "seats": 311
         },
         {
           "id": "001:19:20",
@@ -310,8 +366,6 @@
     }
   },
   "errors": [
-    "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "메가박스 남양주현대아울렛스페이스원: <urlopen error timed out>",
-    "메가박스 상봉: <urlopen error timed out>"
+    "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
