@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-12T14:20:36.812838+09:00",
+  "checked_at_kst": "2026-10-12T14:30:49.642041+09:00",
   "date": "20261014",
   "results": {
     "lotte:3026": {
@@ -8,7 +8,7 @@
           "id": "302606:1",
           "time": "15:05",
           "screen": "6관",
-          "seats": 23
+          "seats": 15
         },
         {
           "id": "302607:2",
@@ -49,7 +49,7 @@
           "id": "2610140019047",
           "time": "17:00",
           "screen": "6관 [Laser]",
-          "seats": 116
+          "seats": 115
         },
         {
           "id": "2610140019034",
@@ -70,7 +70,7 @@
           "id": "101401:2",
           "time": "13:20",
           "screen": "1관",
-          "seats": 40
+          "seats": 37
         },
         {
           "id": "101401:3",
@@ -164,54 +164,13 @@
       ],
       "name": "메가박스 상봉"
     },
-    "cgv:0232": {
-      "sessions": [
-        {
-          "id": "002:11:00",
-          "time": "11:00",
-          "screen": "2관",
-          "seats": 110
-        },
-        {
-          "id": "002:13:10",
-          "time": "13:10",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "002:15:40",
-          "time": "15:40",
-          "screen": "2관",
-          "seats": 183
-        },
-        {
-          "id": "002:21:00",
-          "time": "21:00",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "005:17:25",
-          "time": "17:25",
-          "screen": "5관",
-          "seats": 138
-        },
-        {
-          "id": "005:20:05",
-          "time": "20:05",
-          "screen": "5관",
-          "seats": 136
-        }
-      ],
-      "name": "CGV 구리"
-    },
     "cgv:0351": {
       "sessions": [
         {
           "id": "006:10:00",
           "time": "10:00",
           "screen": "6관 (리클라이너)",
-          "seats": 5
+          "seats": 4
         },
         {
           "id": "006:12:05",
@@ -241,7 +200,7 @@
           "id": "006:20:35",
           "time": "20:35",
           "screen": "6관 (리클라이너)",
-          "seats": 45
+          "seats": 43
         },
         {
           "id": "006:22:40",
@@ -294,27 +253,49 @@
       ],
       "name": "CGV 다산"
     },
-    "cgv:0046": {
+    "cgv:0232": {
       "sessions": [
         {
-          "id": "001:12:50",
-          "time": "12:50",
-          "screen": "1관",
-          "seats": 276
+          "id": "002:11:00",
+          "time": "11:00",
+          "screen": "2관",
+          "seats": 111
         },
         {
-          "id": "001:17:10",
-          "time": "17:10",
-          "screen": "1관",
-          "seats": 292
+          "id": "002:13:10",
+          "time": "13:10",
+          "screen": "2관",
+          "seats": 185
         },
         {
-          "id": "001:19:20",
-          "time": "19:20",
-          "screen": "1관",
-          "seats": 289
+          "id": "002:15:40",
+          "time": "15:40",
+          "screen": "2관",
+          "seats": 183
+        },
+        {
+          "id": "002:21:00",
+          "time": "21:00",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "005:17:25",
+          "time": "17:25",
+          "screen": "5관",
+          "seats": 138
+        },
+        {
+          "id": "005:20:05",
+          "time": "20:05",
+          "screen": "5관",
+          "seats": 136
         }
       ],
+      "name": "CGV 구리"
+    },
+    "cgv:0046": {
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 상봉"
     },
     "cgv:0013": {
@@ -323,6 +304,7 @@
     }
   },
   "errors": [
+    "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "씨네큐 남양주다산: CINE Q remaining seat count missing"
   ]
