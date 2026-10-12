@@ -329,14 +329,48 @@ def recipient_key(recipient):
     return hashlib.sha256(recipient.encode()).hexdigest()
 
 
+def slot_key(s):
+    # Seats and provider session IDs can change; screen/time identify the slot.
+    return json.dumps([re.sub(r'\D', '', str(s['time'])),
+                       re.sub(r'\s+', '', html.unescape(str(s['screen'])))], ensure_ascii=False)
+
+
 def unsent_sessions(state, recipient, target_key, sessions):
-    known = state.get('delivered', {}).get(recipient_key(recipient), {}).get(target_key, [])
-    return [s for s in sessions if s['id'] not in known]
+    known = set(state.get('delivered_slots', {}).get(recipient_key(recipient), {}).get(target_key, []))
+    fresh = []
+    for s in sessions:
+        key = slot_key(s)
+        if key not in known:
+            fresh.append(s)
+            known.add(key)
+    return fresh
 
 
 def mark_sent(state, recipient, target_key, sessions):
-    record = state.setdefault('delivered', {}).setdefault(recipient_key(recipient), {}).setdefault(target_key, [])
+    rk = recipient_key(recipient)
+    record = state.setdefault('delivered', {}).setdefault(rk, {}).setdefault(target_key, [])
     record[:] = sorted(set(record) | {s['id'] for s in sessions})
+    slots = state.setdefault('delivered_slots', {}).setdefault(rk, {}).setdefault(target_key, [])
+    slots[:] = sorted(set(slots) | {slot_key(s) for s in sessions})
+
+
+def migrate_delivery_slots(state, config):
+    # Recover screen/time from the saved previous check for already mailed IDs.
+    if not REPORT.exists():
+        return
+    try:
+        report = json.loads(REPORT.read_text())
+    except (OSError, ValueError):
+        return
+    if report.get('date') != config['date']:
+        return
+    for key, result in report.get('results', {}).items():
+        identity = config['date'] + ':' + config['cgv_movie_no'] + ':' + key
+        for rk, records in state.get('delivered', {}).items():
+            ids = set(records.get(identity, []))
+            recovered = [slot_key(s) for s in result.get('sessions', []) if s['id'] in ids]
+            slots = state.setdefault('delivered_slots', {}).setdefault(rk, {}).setdefault(identity, [])
+            slots[:] = sorted(set(slots) | set(recovered))
 
 
 def display_date(config):
@@ -409,6 +443,7 @@ def main():
         return 0
     settings = mail_settings() if args.mode == 'check' else None
     state = json.loads(STATE.read_text()) if STATE.exists() else {'delivered': {}, 'health': {}}
+    migrate_delivery_slots(state, config)
     targets = config['targets']
     if args.chains:
         targets = [t for t in targets if t['chain'] in args.chains.split(',')]
