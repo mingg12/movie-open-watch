@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-12T20:20:46.289696+09:00",
+  "checked_at_kst": "2026-10-12T20:30:50.195637+09:00",
   "date": "20261017",
   "results": {
     "cineq:2002": {
@@ -80,7 +80,7 @@
           "id": "101401:4",
           "time": "16:25",
           "screen": "1관",
-          "seats": 26
+          "seats": 30
         },
         {
           "id": "101401:5",
@@ -177,7 +177,7 @@
           "id": "101615:4",
           "time": "16:00",
           "screen": "15관",
-          "seats": 371
+          "seats": 373
         },
         {
           "id": "101615:5",
@@ -201,13 +201,13 @@
           "id": "101620:3",
           "time": "14:40",
           "screen": "20관",
-          "seats": 327
+          "seats": 325
         },
         {
           "id": "101620:4",
           "time": "17:00",
           "screen": "20관",
-          "seats": 366
+          "seats": 365
         },
         {
           "id": "101620:5",
@@ -254,7 +254,7 @@
           "id": "002:12:40",
           "time": "12:40",
           "screen": "2관",
-          "seats": 184
+          "seats": 185
         },
         {
           "id": "002:15:20",
@@ -371,7 +371,7 @@
       "name": "CGV 구리갈매"
     },
     "cgv:0046": {
-      "sessions": [],
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 상봉"
     },
     "cgv:0013": {
@@ -380,6 +380,7 @@
     }
   },
   "errors": [
+    "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
