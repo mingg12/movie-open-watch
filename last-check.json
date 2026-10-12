@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-13T01:00:57.086085+09:00",
+  "checked_at_kst": "2026-10-13T01:11:31.389067+09:00",
   "date": "20261017",
   "results": {
     "cineq:2002": {
@@ -148,7 +148,7 @@
           "id": "100802:5",
           "time": "18:05",
           "screen": "2관",
-          "seats": 184
+          "seats": 182
         },
         {
           "id": "100802:6",
@@ -171,7 +171,7 @@
           "id": "101615:3",
           "time": "13:40",
           "screen": "15관",
-          "seats": 299
+          "seats": 297
         },
         {
           "id": "101615:4",
@@ -366,17 +366,13 @@
       ],
       "name": "CGV 다산"
     },
-    "cgv:0358": {
-      "sessions": [],
-      "name": "CGV 구리갈매"
-    },
     "cgv:0046": {
       "sessions": [
         {
           "id": "001:09:30",
           "time": "09:30",
           "screen": "1관",
-          "seats": 199
+          "seats": 176
         },
         {
           "id": "001:11:40",
@@ -404,6 +400,10 @@
         }
       ],
       "name": "CGV 상봉"
+    },
+    "cgv:0358": {
+      "sessions": [],
+      "name": "CGV 구리갈매"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
