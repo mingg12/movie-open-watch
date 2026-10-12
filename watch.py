@@ -339,6 +339,52 @@ def mark_sent(state, recipient, target_key, sessions):
     record[:] = sorted(set(record) | {s['id'] for s in sessions})
 
 
+def display_date(config):
+    date = datetime.strptime(config['date'], '%Y%m%d')
+    weekday = '월화수목금토일'[date.weekday()]
+    return date.strftime('%Y.%m.%d') + '(' + weekday + ')'
+
+
+def record_daily(state, config, targets, results, now):
+    # Store observations across runs, independently of email delivery.
+    day = now.strftime('%Y-%m-%d')
+    scope = config['date'] + ':' + config['cgv_movie_no']
+    daily = state.setdefault('daily_summary', {})
+    for old_day in list(daily):
+        if old_day != day:
+            del daily[old_day]
+    stats = daily.setdefault(day, {}).setdefault(scope, {})
+    for t in targets:
+        key = t['chain'] + ':' + t['code']
+        r = results[key]
+        entry = stats.setdefault(key, {'success': 0, 'failure': 0, 'sessions': [], 'latest': {}})
+        entry['latest'] = {'checked_at': now.isoformat(), 'error': 'error' in r,
+                           'count': len(r.get('sessions', []))}
+        if 'error' in r:
+            entry['failure'] += 1
+        else:
+            entry['success'] += 1
+            entry['sessions'] = sorted(set(entry['sessions']) | {x['id'] for x in r['sessions']})
+    return stats
+
+
+def daily_summary_body(config, targets, stats, now):
+    lines = ['집계일: ' + now.strftime('%Y.%m.%d'), '상영일: ' + display_date(config),
+             '집계 범위: 오늘 저장된 조회 기록부터 ' + now.strftime('%H:%M') + '까지', '',
+             '회차 수는 오늘 발견한 서로 다른 예매 가능 회차 수입니다.',
+             '현재 남은 회차 수나 하루 종일 미오픈이었다는 뜻은 아닙니다.', '']
+    for t in targets:
+        entry = stats[t['chain'] + ':' + t['code']]
+        latest = entry['latest']
+        lines.extend(['- ' + t['name'],
+                      f"조회 성공: {entry['success']}회 / 조회 실패: {entry['failure']}회",
+                      f"오늘 발견한 예매 가능 회차: {len(entry['sessions'])}개",
+                      '마지막 조회: ' + ('조회 오류 (미오픈 여부를 판단할 수 없음)' if latest['error'] else f"조회 성공 / 예매 가능 회차: {latest['count']}개"), ''])
+    if os.environ.get('GITHUB_REPOSITORY'):
+        lines.append('https://github.com/' + os.environ['GITHUB_REPOSITORY'] + '/actions')
+    return '\n'.join(lines)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', choices=['check', 'test_email', 'diagnose'], default='check')
@@ -350,7 +396,7 @@ def main():
         settings = mail_settings()
         preview = ['이 메일은 표시 형식 테스트입니다. 실제 조회 결과나 예매 오픈 알림이 아닙니다.',
                    '아래 모든 지점의 0개 표시는 예시입니다.', '',
-                   '상영일: 2026.10.14', '']
+                   '상영일: ' + display_date(config), '']
         for t in config['targets']:
             preview.extend(['- ' + t['name'], '조회 성공 / 예매 가능 회차: 0개', ''])
         for recipient in settings[2]:
@@ -396,13 +442,13 @@ def main():
                 fresh = unsent_sessions(state, recipient, identity, result['sessions'])
                 if not fresh:
                     continue
-                lines = [config['movie_name'], '상영일: 2026.10.14(수)', t['name'], '', '예매 가능한 새 회차를 확인했습니다.']
+                lines = [config['movie_name'], '상영일: ' + display_date(config), t['name'], '', '예매 가능한 새 회차를 확인했습니다.']
                 for s in fresh:
                     seats = f" / 잔여 {s['seats']}석" if s['seats'] is not None else ''
                     lines.append(f"{s['time']} / {s['screen']}{seats}")
                 lines += ['', t['url'], '', '확인 시점: ' + now.isoformat(), '회차와 좌석은 변경될 수 있습니다. 예매 화면에서 확인해주세요.']
                 try:
-                    send_mail(settings, recipient, f"[치이카와 10/14] {t['name']} 새 회차 확인", '\n'.join(lines))
+                    send_mail(settings, recipient, f"[치이카와 {int(config['date'][4:6])}/{int(config['date'][6:8])}] {t['name']} 새 회차 확인", '\n'.join(lines))
                     mark_sent(state, recipient, identity, fresh)
                     atomic_json(STATE, state)
                 except Exception as exc:
@@ -410,28 +456,23 @@ def main():
     report = {'checked_at_kst': now.isoformat(), 'date': config['date'], 'results': results, 'errors': errors}
     atomic_json(REPORT, report)
     if settings:
-        # Daily heartbeat plus one extra health update if the set of failed branches changes.
-        failures = sorted(k for k, r in results.items() if 'error' in r)
-        health_key = now.strftime('%Y-%m-%d') + ':' + hashlib.sha256(json.dumps(failures).encode()).hexdigest()[:12]
-        for recipient in settings[2]:
-            rk = recipient_key(recipient)
-            if health_key in state.setdefault('health', {}).get(rk, []):
-                continue
-            summary = ['자동 실행 확인: ' + now.isoformat(), '상영일: 2026.10.14', '']
-            for t in targets:
-                r = results[t['chain'] + ':' + t['code']]
-                summary.extend(['- ' + t['name'],
-                                '조회 오류 (미오픈 여부를 판단할 수 없음)' if 'error' in r else f"조회 성공 / 예매 가능 회차: {len(r['sessions'])}개",
-                                ''])
-            summary += ['', '조회 오류가 있으면 GitHub Actions 로그를 확인해주세요.']
-            if os.environ.get('GITHUB_REPOSITORY'):
-                summary.append('https://github.com/' + os.environ['GITHUB_REPOSITORY'] + '/actions')
-            try:
-                send_mail(settings, recipient, '[영화 알림] 자동 실행·조회 상태 확인', '\n'.join(summary))
-                state['health'].setdefault(rk, []).append(health_key)
-                atomic_json(STATE, state)
-            except Exception as exc:
-                errors.append('Health email failed: ' + type(exc).__name__)
+        stats = record_daily(state, config, targets, results, now)
+        atomic_json(STATE, state)
+        # Only the first successful summary delivery per recipient in 22:00-22:59 KST.
+        if now.hour == 22:
+            summary_key = now.strftime('%Y-%m-%d') + ':' + config['date'] + ':' + config['cgv_movie_no']
+            summary = daily_summary_body(config, targets, stats, now)
+            for recipient in settings[2]:
+                rk = recipient_key(recipient)
+                delivered = state.setdefault('daily_summary_sent', {}).setdefault(rk, [])
+                if summary_key in delivered:
+                    continue
+                try:
+                    send_mail(settings, recipient, '[영화 알림] 하루 조회 요약', summary)
+                    delivered.append(summary_key)
+                    atomic_json(STATE, state)
+                except Exception as exc:
+                    errors.append('Daily summary email failed: ' + type(exc).__name__)
     if errors:
         return 1
     return 0
