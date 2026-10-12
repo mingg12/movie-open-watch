@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-13T05:41:09.019372+09:00",
+  "checked_at_kst": "2026-10-13T05:50:41.974200+09:00",
   "date": "20261017",
   "results": {
     "cineq:2002": {
@@ -74,6 +74,29 @@
       "sessions": [],
       "name": "롯데시네마 별내"
     },
+    "lotte:1014": {
+      "sessions": [
+        {
+          "id": "101401:4",
+          "time": "16:25",
+          "screen": "1관",
+          "seats": 21
+        },
+        {
+          "id": "101401:5",
+          "time": "18:35",
+          "screen": "1관",
+          "seats": 61
+        },
+        {
+          "id": "101401:6",
+          "time": "20:45",
+          "screen": "1관",
+          "seats": 86
+        }
+      ],
+      "name": "롯데시네마 용산"
+    },
     "megabox:1311": {
       "sessions": [
         {
@@ -108,29 +131,6 @@
         }
       ],
       "name": "메가박스 상봉"
-    },
-    "lotte:1014": {
-      "sessions": [
-        {
-          "id": "101401:4",
-          "time": "16:25",
-          "screen": "1관",
-          "seats": 21
-        },
-        {
-          "id": "101401:5",
-          "time": "18:35",
-          "screen": "1관",
-          "seats": 61
-        },
-        {
-          "id": "101401:6",
-          "time": "20:45",
-          "screen": "1관",
-          "seats": 86
-        }
-      ],
-      "name": "롯데시네마 용산"
     },
     "lotte:1004": {
       "sessions": [],
@@ -366,10 +366,6 @@
       ],
       "name": "CGV 다산"
     },
-    "cgv:0358": {
-      "sessions": [],
-      "name": "CGV 구리갈매"
-    },
     "cgv:0046": {
       "sessions": [
         {
@@ -405,12 +401,17 @@
       ],
       "name": "CGV 상봉"
     },
+    "cgv:0358": {
+      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "name": "CGV 구리갈매"
+    },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 용산아이파크몰"
     }
   },
   "errors": [
+    "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
