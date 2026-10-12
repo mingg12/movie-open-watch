@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-12T18:20:53.919992+09:00",
+  "checked_at_kst": "2026-10-12T18:30:46.719007+09:00",
   "date": "20261017",
   "results": {
     "cineq:2002": {
@@ -12,7 +12,7 @@
           "id": "2610170019027",
           "time": "10:10",
           "screen": "3관 [Laser]",
-          "seats": 74
+          "seats": 66
         },
         {
           "id": "2610170019026",
@@ -142,13 +142,13 @@
           "id": "100802:4",
           "time": "15:55",
           "screen": "2관",
-          "seats": 117
+          "seats": 115
         },
         {
           "id": "100802:5",
           "time": "18:05",
           "screen": "2관",
-          "seats": 196
+          "seats": 194
         },
         {
           "id": "100802:6",
@@ -230,6 +230,57 @@
       ],
       "name": "롯데시네마 월드타워"
     },
+    "cgv:0232": {
+      "sessions": [
+        {
+          "id": "001:13:30",
+          "time": "13:30",
+          "screen": "1관",
+          "seats": 167
+        },
+        {
+          "id": "001:16:10",
+          "time": "16:10",
+          "screen": "1관",
+          "seats": 167
+        },
+        {
+          "id": "002:10:30",
+          "time": "10:30",
+          "screen": "2관",
+          "seats": 146
+        },
+        {
+          "id": "002:12:40",
+          "time": "12:40",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:15:20",
+          "time": "15:20",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:18:00",
+          "time": "18:00",
+          "screen": "2관",
+          "seats": 185
+        },
+        {
+          "id": "002:20:40",
+          "time": "20:40",
+          "screen": "2관",
+          "seats": 185
+        }
+      ],
+      "name": "CGV 구리"
+    },
+    "cgv:0358": {
+      "sessions": [],
+      "name": "CGV 구리갈매"
+    },
     "cgv:0351": {
       "sessions": [
         {
@@ -296,7 +347,7 @@
           "id": "005:16:10",
           "time": "16:10",
           "screen": "5관 (리클라이너)",
-          "seats": 56
+          "seats": 59
         },
         {
           "id": "005:18:20",
@@ -313,59 +364,8 @@
       ],
       "name": "CGV 다산"
     },
-    "cgv:0358": {
-      "sessions": [],
-      "name": "CGV 구리갈매"
-    },
-    "cgv:0232": {
-      "sessions": [
-        {
-          "id": "001:13:30",
-          "time": "13:30",
-          "screen": "1관",
-          "seats": 167
-        },
-        {
-          "id": "001:16:10",
-          "time": "16:10",
-          "screen": "1관",
-          "seats": 167
-        },
-        {
-          "id": "002:10:30",
-          "time": "10:30",
-          "screen": "2관",
-          "seats": 146
-        },
-        {
-          "id": "002:12:40",
-          "time": "12:40",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "002:15:20",
-          "time": "15:20",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "002:18:00",
-          "time": "18:00",
-          "screen": "2관",
-          "seats": 185
-        },
-        {
-          "id": "002:20:40",
-          "time": "20:40",
-          "screen": "2관",
-          "seats": 185
-        }
-      ],
-      "name": "CGV 구리"
-    },
     "cgv:0046": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "sessions": [],
       "name": "CGV 상봉"
     },
     "cgv:0013": {
@@ -374,7 +374,6 @@
     }
   },
   "errors": [
-    "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
