@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-13T10:30:44.440964+09:00",
+  "checked_at_kst": "2026-10-13T10:40:40.959325+09:00",
   "date": "20261017",
   "results": {
     "cineq:2002": {
@@ -74,6 +74,29 @@
       "sessions": [],
       "name": "롯데시네마 별내"
     },
+    "lotte:1014": {
+      "sessions": [
+        {
+          "id": "101401:4",
+          "time": "16:25",
+          "screen": "1관",
+          "seats": 13
+        },
+        {
+          "id": "101401:5",
+          "time": "18:35",
+          "screen": "1관",
+          "seats": 53
+        },
+        {
+          "id": "101401:6",
+          "time": "20:45",
+          "screen": "1관",
+          "seats": 84
+        }
+      ],
+      "name": "롯데시네마 용산"
+    },
     "megabox:1311": {
       "sessions": [
         {
@@ -109,33 +132,6 @@
       ],
       "name": "메가박스 상봉"
     },
-    "lotte:1014": {
-      "sessions": [
-        {
-          "id": "101401:4",
-          "time": "16:25",
-          "screen": "1관",
-          "seats": 13
-        },
-        {
-          "id": "101401:5",
-          "time": "18:35",
-          "screen": "1관",
-          "seats": 53
-        },
-        {
-          "id": "101401:6",
-          "time": "20:45",
-          "screen": "1관",
-          "seats": 84
-        }
-      ],
-      "name": "롯데시네마 용산"
-    },
-    "lotte:1004": {
-      "sessions": [],
-      "name": "롯데시네마 건대입구"
-    },
     "lotte:1008": {
       "sessions": [
         {
@@ -164,6 +160,10 @@
         }
       ],
       "name": "롯데시네마 청량리"
+    },
+    "lotte:1004": {
+      "sessions": [],
+      "name": "롯데시네마 건대입구"
     },
     "lotte:1016": {
       "sessions": [
@@ -236,7 +236,7 @@
           "id": "001:13:30",
           "time": "13:30",
           "screen": "1관",
-          "seats": 163
+          "seats": 161
         },
         {
           "id": "001:16:10",
@@ -325,7 +325,7 @@
           "id": "005:09:55",
           "time": "09:55",
           "screen": "5관 (리클라이너)",
-          "seats": 31
+          "seats": 29
         },
         {
           "id": "005:12:00",
@@ -366,10 +366,6 @@
       ],
       "name": "CGV 다산"
     },
-    "cgv:0358": {
-      "sessions": [],
-      "name": "CGV 구리갈매"
-    },
     "cgv:0046": {
       "sessions": [
         {
@@ -382,7 +378,7 @@
           "id": "001:11:40",
           "time": "11:40",
           "screen": "1관",
-          "seats": 315
+          "seats": 313
         },
         {
           "id": "001:13:50",
@@ -404,6 +400,10 @@
         }
       ],
       "name": "CGV 상봉"
+    },
+    "cgv:0358": {
+      "sessions": [],
+      "name": "CGV 구리갈매"
     },
     "cgv:0013": {
       "error": "Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
