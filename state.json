@@ -329,7 +329,7 @@
       "20261017:30001367": {
         "cgv:0232": {
           "success": 82,
-          "failure": 41,
+          "failure": 42,
           "sessions": [
             "001:13:30",
             "001:16:10",
@@ -340,14 +340,14 @@
             "002:20:40"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": true,
             "count": 0
           }
         },
         "cgv:0351": {
           "success": 81,
-          "failure": 42,
+          "failure": 43,
           "sessions": [
             "003:08:55",
             "003:11:00",
@@ -365,24 +365,24 @@
             "005:22:40"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": true,
             "count": 0
           }
         },
         "cgv:0358": {
           "success": 80,
-          "failure": 43,
+          "failure": 44,
           "sessions": [],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": true,
             "count": 0
           }
         },
         "cgv:0046": {
           "success": 80,
-          "failure": 43,
+          "failure": 44,
           "sessions": [
             "001:09:30",
             "001:11:40",
@@ -393,23 +393,23 @@
             "001:22:30"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": true,
             "count": 0
           }
         },
         "cgv:0013": {
           "success": 0,
-          "failure": 123,
+          "failure": 124,
           "sessions": [],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": true,
             "count": 0
           }
         },
         "megabox:0019": {
-          "success": 118,
+          "success": 119,
           "failure": 5,
           "sessions": [
             "2610170019026",
@@ -420,13 +420,13 @@
             "2610170019049"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 6
           }
         },
         "megabox:1311": {
-          "success": 118,
+          "success": 119,
           "failure": 5,
           "sessions": [
             "2610171311013",
@@ -437,23 +437,23 @@
             "2610171311018"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 5
           }
         },
         "cineq:2002": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 0
           }
         },
         "lotte:3026": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [
             "302607:4",
@@ -461,23 +461,23 @@
             "302607:6"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 3
           }
         },
         "lotte:3046": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 0
           }
         },
         "lotte:1014": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [
             "101401:4",
@@ -485,23 +485,23 @@
             "101401:6"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 3
           }
         },
         "lotte:1004": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 0
           }
         },
         "lotte:1008": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [
             "100802:4",
@@ -510,13 +510,13 @@
             "100802:7"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 4
           }
         },
         "lotte:1016": {
-          "success": 123,
+          "success": 124,
           "failure": 0,
           "sessions": [
             "101615:3",
@@ -532,7 +532,7 @@
             "101620:7"
           ],
           "latest": {
-            "checked_at": "2026-10-13T20:20:41.705047+09:00",
+            "checked_at": "2026-10-13T20:30:53.700036+09:00",
             "error": false,
             "count": 10
           }
