@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-13T09:10:40.073926+09:00",
+  "checked_at_kst": "2026-10-13T09:20:35.522514+09:00",
   "date": "20261017",
   "results": {
     "cineq:2002": {
@@ -74,29 +74,6 @@
       "sessions": [],
       "name": "롯데시네마 별내"
     },
-    "lotte:1014": {
-      "sessions": [
-        {
-          "id": "101401:4",
-          "time": "16:25",
-          "screen": "1관",
-          "seats": 16
-        },
-        {
-          "id": "101401:5",
-          "time": "18:35",
-          "screen": "1관",
-          "seats": 56
-        },
-        {
-          "id": "101401:6",
-          "time": "20:45",
-          "screen": "1관",
-          "seats": 84
-        }
-      ],
-      "name": "롯데시네마 용산"
-    },
     "megabox:1311": {
       "sessions": [
         {
@@ -132,6 +109,29 @@
       ],
       "name": "메가박스 상봉"
     },
+    "lotte:1014": {
+      "sessions": [
+        {
+          "id": "101401:4",
+          "time": "16:25",
+          "screen": "1관",
+          "seats": 16
+        },
+        {
+          "id": "101401:5",
+          "time": "18:35",
+          "screen": "1관",
+          "seats": 56
+        },
+        {
+          "id": "101401:6",
+          "time": "20:45",
+          "screen": "1관",
+          "seats": 84
+        }
+      ],
+      "name": "롯데시네마 용산"
+    },
     "lotte:1004": {
       "sessions": [],
       "name": "롯데시네마 건대입구"
@@ -142,7 +142,7 @@
           "id": "100802:4",
           "time": "15:55",
           "screen": "2관",
-          "seats": 84
+          "seats": 86
         },
         {
           "id": "100802:5",
@@ -201,7 +201,7 @@
           "id": "101620:3",
           "time": "14:40",
           "screen": "20관",
-          "seats": 310
+          "seats": 308
         },
         {
           "id": "101620:4",
@@ -213,7 +213,7 @@
           "id": "101620:5",
           "time": "19:20",
           "screen": "20관",
-          "seats": 360
+          "seats": 357
         },
         {
           "id": "101620:6",
@@ -248,7 +248,7 @@
           "id": "002:10:30",
           "time": "10:30",
           "screen": "2관",
-          "seats": 127
+          "seats": 129
         },
         {
           "id": "002:12:40",
@@ -367,11 +367,42 @@
       "name": "CGV 다산"
     },
     "cgv:0358": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "sessions": [],
       "name": "CGV 구리갈매"
     },
     "cgv:0046": {
-      "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+      "sessions": [
+        {
+          "id": "001:09:30",
+          "time": "09:30",
+          "screen": "1관",
+          "seats": 4
+        },
+        {
+          "id": "001:11:40",
+          "time": "11:40",
+          "screen": "1관",
+          "seats": 317
+        },
+        {
+          "id": "001:13:50",
+          "time": "13:50",
+          "screen": "1관",
+          "seats": 320
+        },
+        {
+          "id": "001:16:00",
+          "time": "16:00",
+          "screen": "1관",
+          "seats": 319
+        },
+        {
+          "id": "001:18:10",
+          "time": "18:10",
+          "screen": "1관",
+          "seats": 319
+        }
+      ],
       "name": "CGV 상봉"
     },
     "cgv:0013": {
@@ -380,8 +411,6 @@
     }
   },
   "errors": [
-    "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 용산아이파크몰: Direct API: ValueError: CGV returned another theater; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
