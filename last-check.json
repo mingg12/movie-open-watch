@@ -1,7 +1,48 @@
 {
-  "checked_at_kst": "2026-10-17T10:40:42.933305+09:00",
+  "checked_at_kst": "2026-10-17T10:50:36.652429+09:00",
   "date": "20261018",
   "results": {
+    "cineq:2002": {
+      "sessions": [
+        {
+          "id": "1102991",
+          "time": "14:35",
+          "screen": "(리클라이너)6 관",
+          "seats": 58
+        },
+        {
+          "id": "1102992",
+          "time": "16:40",
+          "screen": "(리클라이너)6 관",
+          "seats": 60
+        },
+        {
+          "id": "1102993",
+          "time": "18:45",
+          "screen": "(리클라이너)6 관",
+          "seats": 64
+        },
+        {
+          "id": "1102994",
+          "time": "20:50",
+          "screen": "(리클라이너)6 관",
+          "seats": 64
+        },
+        {
+          "id": "1103001",
+          "time": "17:55",
+          "screen": "(리클라이너)4 관",
+          "seats": 44
+        },
+        {
+          "id": "1102990",
+          "time": "12:25",
+          "screen": "(리클라이너)6 관",
+          "seats": 63
+        }
+      ],
+      "name": "씨네큐 남양주다산"
+    },
     "megabox:0019": {
       "sessions": [
         {
@@ -32,7 +73,7 @@
           "id": "2610180019020",
           "time": "18:50",
           "screen": "3관 [Laser]",
-          "seats": 150
+          "seats": 148
         },
         {
           "id": "2610180019021",
@@ -42,47 +83,6 @@
         }
       ],
       "name": "메가박스 남양주현대아울렛스페이스원"
-    },
-    "megabox:1311": {
-      "sessions": [
-        {
-          "id": "2610181311008",
-          "time": "10:20",
-          "screen": "1관(4층)[Laser]",
-          "seats": 151
-        },
-        {
-          "id": "2610181311003",
-          "time": "12:25",
-          "screen": "1관(4층)[Laser]",
-          "seats": 146
-        },
-        {
-          "id": "2610181311004",
-          "time": "14:30",
-          "screen": "1관(4층)[Laser]",
-          "seats": 153
-        },
-        {
-          "id": "2610181311005",
-          "time": "16:35",
-          "screen": "1관(4층)[Laser]",
-          "seats": 153
-        },
-        {
-          "id": "2610181311006",
-          "time": "18:40",
-          "screen": "1관(4층)[Laser]",
-          "seats": 150
-        },
-        {
-          "id": "2610181311007",
-          "time": "20:45",
-          "screen": "1관(4층)[Laser]",
-          "seats": 155
-        }
-      ],
-      "name": "메가박스 상봉"
     },
     "lotte:3026": {
       "sessions": [
@@ -195,6 +195,47 @@
         }
       ],
       "name": "롯데시네마 별내"
+    },
+    "megabox:1311": {
+      "sessions": [
+        {
+          "id": "2610181311008",
+          "time": "10:20",
+          "screen": "1관(4층)[Laser]",
+          "seats": 151
+        },
+        {
+          "id": "2610181311003",
+          "time": "12:25",
+          "screen": "1관(4층)[Laser]",
+          "seats": 146
+        },
+        {
+          "id": "2610181311004",
+          "time": "14:30",
+          "screen": "1관(4층)[Laser]",
+          "seats": 153
+        },
+        {
+          "id": "2610181311005",
+          "time": "16:35",
+          "screen": "1관(4층)[Laser]",
+          "seats": 153
+        },
+        {
+          "id": "2610181311006",
+          "time": "18:40",
+          "screen": "1관(4층)[Laser]",
+          "seats": 150
+        },
+        {
+          "id": "2610181311007",
+          "time": "20:45",
+          "screen": "1관(4층)[Laser]",
+          "seats": 155
+        }
+      ],
+      "name": "메가박스 상봉"
     },
     "lotte:1014": {
       "sessions": [
@@ -375,7 +416,7 @@
           "id": "100802:4",
           "time": "16:25",
           "screen": "2관",
-          "seats": 158
+          "seats": 156
         },
         {
           "id": "100802:5",
@@ -577,13 +618,13 @@
           "id": "101615:2",
           "time": "11:30",
           "screen": "15관",
-          "seats": 335
+          "seats": 336
         },
         {
           "id": "101615:3",
           "time": "13:50",
           "screen": "15관",
-          "seats": 282
+          "seats": 280
         },
         {
           "id": "101615:4",
@@ -630,10 +671,6 @@
       ],
       "name": "롯데시네마 월드타워"
     },
-    "cineq:2002": {
-      "error": "<urlopen error timed out>",
-      "name": "씨네큐 남양주다산"
-    },
     "cgv:0232": {
       "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 구리"
@@ -660,7 +697,6 @@
     "CGV 다산: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "씨네큐 남양주다산: <urlopen error timed out>"
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
