@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-18T07:10:37.369661+09:00",
+  "checked_at_kst": "2026-10-18T07:20:33.940186+09:00",
   "date": "20261018",
   "results": {
     "cineq:2002": {
@@ -42,6 +42,47 @@
         }
       ],
       "name": "씨네큐 남양주다산"
+    },
+    "megabox:0019": {
+      "sessions": [
+        {
+          "id": "2610180019019",
+          "time": "10:10",
+          "screen": "3관 [Laser]",
+          "seats": 139
+        },
+        {
+          "id": "2610180019022",
+          "time": "12:20",
+          "screen": "3관 [Laser]",
+          "seats": 131
+        },
+        {
+          "id": "2610180019017",
+          "time": "14:30",
+          "screen": "3관 [Laser]",
+          "seats": 128
+        },
+        {
+          "id": "2610180019018",
+          "time": "16:40",
+          "screen": "3관 [Laser]",
+          "seats": 150
+        },
+        {
+          "id": "2610180019020",
+          "time": "18:50",
+          "screen": "3관 [Laser]",
+          "seats": 130
+        },
+        {
+          "id": "2610180019021",
+          "time": "21:00",
+          "screen": "3관 [Laser]",
+          "seats": 154
+        }
+      ],
+      "name": "메가박스 남양주현대아울렛스페이스원"
     },
     "lotte:3026": {
       "sessions": [
@@ -154,6 +195,47 @@
         }
       ],
       "name": "롯데시네마 별내"
+    },
+    "megabox:1311": {
+      "sessions": [
+        {
+          "id": "2610181311008",
+          "time": "10:20",
+          "screen": "1관(4층)[Laser]",
+          "seats": 147
+        },
+        {
+          "id": "2610181311003",
+          "time": "12:25",
+          "screen": "1관(4층)[Laser]",
+          "seats": 141
+        },
+        {
+          "id": "2610181311004",
+          "time": "14:30",
+          "screen": "1관(4층)[Laser]",
+          "seats": 149
+        },
+        {
+          "id": "2610181311005",
+          "time": "16:35",
+          "screen": "1관(4층)[Laser]",
+          "seats": 154
+        },
+        {
+          "id": "2610181311006",
+          "time": "18:40",
+          "screen": "1관(4층)[Laser]",
+          "seats": 150
+        },
+        {
+          "id": "2610181311007",
+          "time": "20:45",
+          "screen": "1관(4층)[Laser]",
+          "seats": 155
+        }
+      ],
+      "name": "메가박스 상봉"
     },
     "lotte:1014": {
       "sessions": [
@@ -274,83 +356,6 @@
       ],
       "name": "롯데시네마 용산"
     },
-    "lotte:1004": {
-      "sessions": [
-        {
-          "id": "301:3",
-          "time": "15:20",
-          "screen": "샤롯데",
-          "seats": 32
-        },
-        {
-          "id": "100407:2",
-          "time": "10:35",
-          "screen": "7관",
-          "seats": 149
-        },
-        {
-          "id": "100407:3",
-          "time": "12:45",
-          "screen": "7관",
-          "seats": 121
-        },
-        {
-          "id": "100407:4",
-          "time": "14:55",
-          "screen": "7관",
-          "seats": 103
-        },
-        {
-          "id": "100407:5",
-          "time": "17:05",
-          "screen": "7관",
-          "seats": 155
-        },
-        {
-          "id": "100407:6",
-          "time": "19:15",
-          "screen": "7관",
-          "seats": 160
-        },
-        {
-          "id": "100404:2",
-          "time": "08:50",
-          "screen": "4관",
-          "seats": 116
-        },
-        {
-          "id": "100404:3",
-          "time": "13:45",
-          "screen": "4관",
-          "seats": 80
-        },
-        {
-          "id": "100404:4",
-          "time": "15:55",
-          "screen": "4관",
-          "seats": 79
-        },
-        {
-          "id": "100404:5",
-          "time": "18:05",
-          "screen": "4관",
-          "seats": 112
-        },
-        {
-          "id": "100404:6",
-          "time": "20:15",
-          "screen": "4관",
-          "seats": 122
-        },
-        {
-          "id": "100404:7",
-          "time": "22:25",
-          "screen": "4관",
-          "seats": 125
-        }
-      ],
-      "name": "롯데시네마 건대입구"
-    },
     "lotte:1008": {
       "sessions": [
         {
@@ -446,6 +451,83 @@
       ],
       "name": "롯데시네마 청량리"
     },
+    "lotte:1004": {
+      "sessions": [
+        {
+          "id": "301:3",
+          "time": "15:20",
+          "screen": "샤롯데",
+          "seats": 32
+        },
+        {
+          "id": "100407:2",
+          "time": "10:35",
+          "screen": "7관",
+          "seats": 149
+        },
+        {
+          "id": "100407:3",
+          "time": "12:45",
+          "screen": "7관",
+          "seats": 121
+        },
+        {
+          "id": "100407:4",
+          "time": "14:55",
+          "screen": "7관",
+          "seats": 103
+        },
+        {
+          "id": "100407:5",
+          "time": "17:05",
+          "screen": "7관",
+          "seats": 155
+        },
+        {
+          "id": "100407:6",
+          "time": "19:15",
+          "screen": "7관",
+          "seats": 159
+        },
+        {
+          "id": "100404:2",
+          "time": "08:50",
+          "screen": "4관",
+          "seats": 116
+        },
+        {
+          "id": "100404:3",
+          "time": "13:45",
+          "screen": "4관",
+          "seats": 80
+        },
+        {
+          "id": "100404:4",
+          "time": "15:55",
+          "screen": "4관",
+          "seats": 79
+        },
+        {
+          "id": "100404:5",
+          "time": "18:05",
+          "screen": "4관",
+          "seats": 112
+        },
+        {
+          "id": "100404:6",
+          "time": "20:15",
+          "screen": "4관",
+          "seats": 122
+        },
+        {
+          "id": "100404:7",
+          "time": "22:25",
+          "screen": "4관",
+          "seats": 125
+        }
+      ],
+      "name": "롯데시네마 건대입구"
+    },
     "lotte:1016": {
       "sessions": [
         {
@@ -464,7 +546,7 @@
           "id": "101615:1",
           "time": "09:10",
           "screen": "15관",
-          "seats": 355
+          "seats": 354
         },
         {
           "id": "101605:1",
@@ -530,7 +612,7 @@
           "id": "101616:6",
           "time": "20:15",
           "screen": "16관",
-          "seats": 128
+          "seats": 126
         },
         {
           "id": "101615:2",
@@ -548,7 +630,7 @@
           "id": "101615:4",
           "time": "16:10",
           "screen": "15관",
-          "seats": 181
+          "seats": 183
         },
         {
           "id": "101615:5",
@@ -589,14 +671,6 @@
       ],
       "name": "롯데시네마 월드타워"
     },
-    "megabox:0019": {
-      "error": "<urlopen error timed out>",
-      "name": "메가박스 남양주현대아울렛스페이스원"
-    },
-    "megabox:1311": {
-      "error": "<urlopen error timed out>",
-      "name": "메가박스 상봉"
-    },
     "cgv:0232": {
       "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 구리"
@@ -623,8 +697,6 @@
     "CGV 다산: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "메가박스 남양주현대아울렛스페이스원: <urlopen error timed out>",
-    "메가박스 상봉: <urlopen error timed out>"
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
