@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-17T16:20:36.380646+09:00",
+  "checked_at_kst": "2026-10-17T16:30:46.184143+09:00",
   "date": "20261018",
   "results": {
     "cineq:2002": {
@@ -42,6 +42,47 @@
         }
       ],
       "name": "씨네큐 남양주다산"
+    },
+    "megabox:0019": {
+      "sessions": [
+        {
+          "id": "2610180019019",
+          "time": "10:10",
+          "screen": "3관 [Laser]",
+          "seats": 142
+        },
+        {
+          "id": "2610180019022",
+          "time": "12:20",
+          "screen": "3관 [Laser]",
+          "seats": 143
+        },
+        {
+          "id": "2610180019017",
+          "time": "14:30",
+          "screen": "3관 [Laser]",
+          "seats": 131
+        },
+        {
+          "id": "2610180019018",
+          "time": "16:40",
+          "screen": "3관 [Laser]",
+          "seats": 150
+        },
+        {
+          "id": "2610180019020",
+          "time": "18:50",
+          "screen": "3관 [Laser]",
+          "seats": 148
+        },
+        {
+          "id": "2610180019021",
+          "time": "21:00",
+          "screen": "3관 [Laser]",
+          "seats": 154
+        }
+      ],
+      "name": "메가박스 남양주현대아울렛스페이스원"
     },
     "lotte:3026": {
       "sessions": [
@@ -154,6 +195,47 @@
         }
       ],
       "name": "롯데시네마 별내"
+    },
+    "megabox:1311": {
+      "sessions": [
+        {
+          "id": "2610181311008",
+          "time": "10:20",
+          "screen": "1관(4층)[Laser]",
+          "seats": 152
+        },
+        {
+          "id": "2610181311003",
+          "time": "12:25",
+          "screen": "1관(4층)[Laser]",
+          "seats": 144
+        },
+        {
+          "id": "2610181311004",
+          "time": "14:30",
+          "screen": "1관(4층)[Laser]",
+          "seats": 153
+        },
+        {
+          "id": "2610181311005",
+          "time": "16:35",
+          "screen": "1관(4층)[Laser]",
+          "seats": 153
+        },
+        {
+          "id": "2610181311006",
+          "time": "18:40",
+          "screen": "1관(4층)[Laser]",
+          "seats": 150
+        },
+        {
+          "id": "2610181311007",
+          "time": "20:45",
+          "screen": "1관(4층)[Laser]",
+          "seats": 155
+        }
+      ],
+      "name": "메가박스 상봉"
     },
     "lotte:1014": {
       "sessions": [
@@ -304,7 +386,7 @@
           "id": "100407:5",
           "time": "17:05",
           "screen": "7관",
-          "seats": 165
+          "seats": 161
         },
         {
           "id": "100407:6",
@@ -399,7 +481,7 @@
           "id": "100807:5",
           "time": "19:45",
           "screen": "7관",
-          "seats": 202
+          "seats": 204
         },
         {
           "id": "100807:6",
@@ -441,7 +523,7 @@
           "id": "100807:3",
           "time": "15:25",
           "screen": "7관",
-          "seats": 184
+          "seats": 186
         }
       ],
       "name": "롯데시네마 청량리"
@@ -452,13 +534,13 @@
           "id": "101603:3",
           "time": "13:45",
           "screen": "3관",
-          "seats": 2
+          "seats": 4
         },
         {
           "id": "101604:3",
           "time": "13:30",
           "screen": "4관",
-          "seats": 6
+          "seats": 11
         },
         {
           "id": "101615:1",
@@ -488,7 +570,7 @@
           "id": "101605:4",
           "time": "15:00",
           "screen": "5관",
-          "seats": 263
+          "seats": 261
         },
         {
           "id": "101616:7",
@@ -589,14 +671,6 @@
       ],
       "name": "롯데시네마 월드타워"
     },
-    "megabox:0019": {
-      "error": "<urlopen error timed out>",
-      "name": "메가박스 남양주현대아울렛스페이스원"
-    },
-    "megabox:1311": {
-      "error": "<urlopen error timed out>",
-      "name": "메가박스 상봉"
-    },
     "cgv:0232": {
       "error": "Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
       "name": "CGV 구리"
@@ -623,8 +697,6 @@
     "CGV 다산: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "메가박스 남양주현대아울렛스페이스원: <urlopen error timed out>",
-    "메가박스 상봉: <urlopen error timed out>"
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
   ]
 }
