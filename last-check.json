@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-18T22:50:40.954657+09:00",
+  "checked_at_kst": "2026-10-18T23:01:02.104216+09:00",
   "date": "20261018",
   "results": {
     "cineq:2002": {
@@ -18,13 +18,13 @@
       "sessions": [],
       "name": "롯데시네마 별내"
     },
-    "megabox:1311": {
-      "sessions": [],
-      "name": "메가박스 상봉"
-    },
     "lotte:1014": {
       "sessions": [],
       "name": "롯데시네마 용산"
+    },
+    "megabox:1311": {
+      "sessions": [],
+      "name": "메가박스 상봉"
     },
     "lotte:1004": {
       "sessions": [],
