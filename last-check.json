@@ -1,16 +1,9 @@
 {
-  "checked_at_kst": "2026-10-18T20:50:37.031444+09:00",
+  "checked_at_kst": "2026-10-18T21:00:53.452359+09:00",
   "date": "20261018",
   "results": {
     "cineq:2002": {
-      "sessions": [
-        {
-          "id": "1102994",
-          "time": "20:50",
-          "screen": "(리클라이너)6 관",
-          "seats": 56
-        }
-      ],
+      "error": "CINE Q remaining seat count missing",
       "name": "씨네큐 남양주다산"
     },
     "megabox:0019": {
@@ -35,12 +28,6 @@
     "lotte:1014": {
       "sessions": [
         {
-          "id": "101401:6",
-          "time": "20:45",
-          "screen": "1관",
-          "seats": 89
-        },
-        {
           "id": "101402:6",
           "time": "21:25",
           "screen": "2관",
@@ -56,16 +43,10 @@
     "lotte:1008": {
       "sessions": [
         {
-          "id": "100802:6",
-          "time": "20:45",
-          "screen": "2관",
-          "seats": 197
-        },
-        {
           "id": "100807:6",
           "time": "21:55",
           "screen": "7관",
-          "seats": 208
+          "seats": 204
         }
       ],
       "name": "롯데시네마 청량리"
@@ -88,12 +69,6 @@
           "time": "22:00",
           "screen": "5관",
           "seats": 376
-        },
-        {
-          "id": "101615:6",
-          "time": "20:50",
-          "screen": "15관",
-          "seats": 312
         },
         {
           "id": "101615:7",
@@ -136,6 +111,7 @@
     "CGV 다산: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+    "씨네큐 남양주다산: CINE Q remaining seat count missing"
   ]
 }
