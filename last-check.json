@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-18T22:30:44.985598+09:00",
+  "checked_at_kst": "2026-10-18T22:40:39.419849+09:00",
   "date": "20261018",
   "results": {
     "cineq:2002": {
@@ -14,32 +14,25 @@
       "sessions": [],
       "name": "롯데시네마 구리아울렛"
     },
-    "lotte:1014": {
-      "sessions": [],
-      "name": "롯데시네마 용산"
-    },
     "lotte:3046": {
       "sessions": [],
       "name": "롯데시네마 별내"
+    },
+    "lotte:1014": {
+      "sessions": [],
+      "name": "롯데시네마 용산"
     },
     "megabox:1311": {
       "sessions": [],
       "name": "메가박스 상봉"
     },
+    "lotte:1004": {
+      "sessions": [],
+      "name": "롯데시네마 건대입구"
+    },
     "lotte:1008": {
       "sessions": [],
       "name": "롯데시네마 청량리"
-    },
-    "lotte:1004": {
-      "sessions": [
-        {
-          "id": "100404:7",
-          "time": "22:25",
-          "screen": "4관",
-          "seats": 115
-        }
-      ],
-      "name": "롯데시네마 건대입구"
     },
     "lotte:1016": {
       "sessions": [
@@ -53,7 +46,7 @@
           "id": "101616:7",
           "time": "22:35",
           "screen": "16관",
-          "seats": 112
+          "seats": 108
         }
       ],
       "name": "롯데시네마 월드타워"
