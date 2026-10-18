@@ -1,61 +1,24 @@
 {
-  "checked_at_kst": "2026-10-18T14:30:50.033964+09:00",
+  "checked_at_kst": "2026-10-18T14:40:43.185215+09:00",
   "date": "20261018",
   "results": {
     "cineq:2002": {
-      "sessions": [
-        {
-          "id": "1102991",
-          "time": "14:35",
-          "screen": "(리클라이너)6 관",
-          "seats": 24
-        },
-        {
-          "id": "1102992",
-          "time": "16:40",
-          "screen": "(리클라이너)6 관",
-          "seats": 46
-        },
-        {
-          "id": "1102993",
-          "time": "18:45",
-          "screen": "(리클라이너)6 관",
-          "seats": 64
-        },
-        {
-          "id": "1102994",
-          "time": "20:50",
-          "screen": "(리클라이너)6 관",
-          "seats": 62
-        },
-        {
-          "id": "1103001",
-          "time": "17:55",
-          "screen": "(리클라이너)4 관",
-          "seats": 42
-        }
-      ],
+      "error": "CINE Q remaining seat count missing",
       "name": "씨네큐 남양주다산"
     },
     "megabox:0019": {
       "sessions": [
         {
-          "id": "2610180019017",
-          "time": "14:30",
-          "screen": "3관 [Laser]",
-          "seats": 98
-        },
-        {
           "id": "2610180019018",
           "time": "16:40",
           "screen": "3관 [Laser]",
-          "seats": 134
+          "seats": 136
         },
         {
           "id": "2610180019020",
           "time": "18:50",
           "screen": "3관 [Laser]",
-          "seats": 120
+          "seats": 121
         },
         {
           "id": "2610180019021",
@@ -119,7 +82,7 @@
           "id": "304605:3",
           "time": "16:10",
           "screen": "5관",
-          "seats": 136
+          "seats": 134
         },
         {
           "id": "304605:4",
@@ -139,16 +102,10 @@
     "megabox:1311": {
       "sessions": [
         {
-          "id": "2610181311004",
-          "time": "14:30",
-          "screen": "1관(4층)[Laser]",
-          "seats": 130
-        },
-        {
           "id": "2610181311005",
           "time": "16:35",
           "screen": "1관(4층)[Laser]",
-          "seats": 150
+          "seats": 144
         },
         {
           "id": "2610181311006",
@@ -171,7 +128,7 @@
           "id": "101401:4",
           "time": "16:25",
           "screen": "1관",
-          "seats": 55
+          "seats": 53
         },
         {
           "id": "101401:5",
@@ -195,7 +152,7 @@
           "id": "101402:4",
           "time": "17:05",
           "screen": "2관",
-          "seats": 70
+          "seats": 66
         },
         {
           "id": "101402:5",
@@ -260,7 +217,7 @@
           "id": "100407:4",
           "time": "14:55",
           "screen": "7관",
-          "seats": 79
+          "seats": 74
         },
         {
           "id": "100407:5",
@@ -278,7 +235,7 @@
           "id": "100404:4",
           "time": "15:55",
           "screen": "4관",
-          "seats": 60
+          "seats": 61
         },
         {
           "id": "100404:5",
@@ -307,7 +264,7 @@
           "id": "100801:3",
           "time": "15:55",
           "screen": "1관",
-          "seats": 193
+          "seats": 191
         },
         {
           "id": "100801:4",
@@ -343,7 +300,7 @@
           "id": "100807:3",
           "time": "15:25",
           "screen": "7관",
-          "seats": 134
+          "seats": 130
         },
         {
           "id": "100807:4",
@@ -372,13 +329,13 @@
           "id": "101605:4",
           "time": "15:00",
           "screen": "5관",
-          "seats": 104
+          "seats": 97
         },
         {
           "id": "101605:5",
           "time": "17:20",
           "screen": "5관",
-          "seats": 279
+          "seats": 278
         },
         {
           "id": "101605:6",
@@ -396,7 +353,7 @@
           "id": "101615:4",
           "time": "16:10",
           "screen": "15관",
-          "seats": 105
+          "seats": 103
         },
         {
           "id": "101615:5",
@@ -408,7 +365,7 @@
           "id": "101615:6",
           "time": "20:50",
           "screen": "15관",
-          "seats": 370
+          "seats": 368
         },
         {
           "id": "101615:7",
@@ -420,13 +377,13 @@
           "id": "101616:4",
           "time": "15:35",
           "screen": "16관",
-          "seats": 30
+          "seats": 27
         },
         {
           "id": "101616:5",
           "time": "17:55",
           "screen": "16관",
-          "seats": 66
+          "seats": 64
         },
         {
           "id": "101616:6",
@@ -469,6 +426,7 @@
     "CGV 다산: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 구리갈매: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
     "CGV 상봉: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
-    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30"
+    "CGV 용산아이파크몰: Direct API: HTTPError: HTTP Error 403: Forbidden; browser: Page.evaluate: Error: CGV HTTP 403\n    at eval (eval at evaluate (:311:30), <anonymous>:6:46)\n    at async <anonymous>:337:30",
+    "씨네큐 남양주다산: CINE Q remaining seat count missing"
   ]
 }
